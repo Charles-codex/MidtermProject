@@ -1,0 +1,165 @@
+/* Author Charles Beatty
+    10/20/2024
+    Website project*/
+    
+    /* CSS Reset*/
+    body, header, nav, main,footer, img, h1, h3, section, article, aside, figure, figcaption {
+        margin: 0%;
+        padding: 0%;
+        border: 0%;
+    }
+    /*Style rules for body and images*/
+    body{
+        background: linear-gradient(red, blue, black)
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+    /*Style Rules for mobile viewport*/
+
+    /*Style Rules to hide tablet desk*/
+    .tablet-desk{
+        display: none;
+    }
+    /*Style Rules for header content*/
+    header{
+        text-align: center;
+        color: #006;
+        padding: 4%;
+    }
+    header h1{
+        font-size: 4em;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 6px;
+    }
+    header h3{
+        font-weight: bold;
+        font-size: 1.5em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    /*Style Rules for nav area*/
+    nav{
+        opacity: 50%;
+        color: #006;
+    }
+    nav ul{
+        list-style-type: none;
+        text-align: center;
+    }
+    nav li{
+        display: block;
+        font-size: 2em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 300;
+        border: 2px #f00;
+        border-radius: 2%;
+    }
+    nav li a{
+        display: block;
+        color: #006;
+        text-align: center;
+        padding: 2%;
+        text-decoration: solid;
+    }
+    /*Style Rules for the main content*/
+    main{
+        padding: 3em;
+        color: #f00;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    main h2{
+        color: #f00;
+    }
+    main p{
+        color: #f00;
+        font-size: 1.5em;
+    }
+    main a{
+        color: #006;
+        text-decoration: double;
+    }
+    main ul{
+        list-style: square;
+        font-size: 1.5em;
+    }
+    figure{
+        border: 1.5px;
+        margin: auto;
+        background-color: rgba(red, green, blue, alpha);
+        text-align: center;
+    }
+    .column{
+        float: left;
+        width: 30%;
+        padding: 5px;
+    }
+    .row::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    figcaption{
+        display: block;
+        text-align: center;
+    }
+    .examples{
+        border: 2px;
+    }
+    .examples ul{
+        margin-left: 10%;
+    }
+    /*Style Rules for footer content*/
+    footer{
+        text-align: center;
+        font-size: 1em;
+        color: #f00;
+    }
+    footer a{
+        color: black;
+    }
+    /*Media Query for desktop viewport*/
+    @media screen and (min-width: 1000px), print{
+        .tablet-desktop{
+            display: block;
+        }
+        .mobile{
+            display: none;
+        }
+    }
+    /*desktop viewport. Style rules for navigation area*/
+    nav li{
+        display: inline-block;
+        font-size: 1.5em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+    }
+    nav li a {
+        display: block;
+        text-align: center;
+        padding: 1em;
+    }
+    /*desktop viewport: style rules for main content*/
+    main{
+        overflow: auto;
+    }
+    figure{
+        max-width: 500px;
+    }
+    /* Unvisited link*/
+    a:link {
+        color: #006;
+    }
+    /*visted link*/
+    a:visited{
+        color: #f00;
+    }
+    /*mouse over link*/
+    a:hover{
+        color: aqua;
+    }
+    /*Active links*/
+    a:active{
+        color: darkblue;
+    }
